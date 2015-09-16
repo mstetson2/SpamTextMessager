@@ -2,53 +2,23 @@ package com.yellowmoss.spamtextmessager;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
+import android.app.PendingIntent;
 import android.content.Intent;
+import android.telephony.SmsManager;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.view.View;
 
-//THIS IS REALLY THE STARTUP/DIALOG CLASS!!
 public class SpamActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.splash);
-		
-		final Context context = this;
-
-		AlertDialog.Builder builder = new AlertDialog.Builder(context);
-
-		builder.setPositiveButton("Accept",
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						//startActivity(new Intent(getApplicationContext(), StartSpamScreen.class));
-						System.out.println("1a");
-						startActivity(new Intent(getApplicationContext(), StartSpamScreen2.class));
-						System.out.println("1b");
-					}
-				});
-		
-		builder.setNegativeButton("Deny and Exit",
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						System.out.println("Clicked Exit!");
-						finish();
-						System.exit(0);
-					}
-				});
-
-		builder.setMessage(
-				"We are not responsibile for any damages from using this app. Every text sent still counts as a normal text. It is reccommended that you and your recipient have an unlimited plan.\n\nClick Accept to continue or Deny to exit.")
-				.setTitle("Notice:");
-
-		AlertDialog dialog = builder.create();
-		dialog.show();
+		setContentView(R.layout.activity_spam);
 
 	}
-}
-//BELOW IS OLD!!
-	/*@Override
+
+	@Override
 	protected void onStart() {
 		super.onStart();
 
@@ -80,4 +50,5 @@ public class SpamActivity extends Activity {
 		SmsManager sms = SmsManager.getDefault();
 		sms.sendTextMessage(newphoneNo, null, newMessage, pi, null);
 	}
-*/
+
+}

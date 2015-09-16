@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yellowmoss.spamtextmessager"
     android:versionCode="1"
-    android:versionName="0.5" >
+    android:versionName="1.1" >
 
     <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.READ_CONTACTS"> </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -16,13 +16,9 @@
         android:icon="@drawable/iconv2"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name="com.yellowmoss.spamtextmessager.StartSpamScreen"
-            android:label="@string/title_activity_start_spam_screen"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.yellowmoss.spamtextmessager.SpamActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -30,6 +26,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.yellowmoss.spamtextmessager.SpamActivity"
+            android:label="@string/title_activity_spam"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.yellowmoss.spamtextmessager.Help"
@@ -45,14 +47,6 @@
             android:name="com.yellowmoss.spamtextmessager.DebugScreen"
             android:label="@string/title_activity_debug_screen"
             android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.yellowmoss.spamtextmessager.Share"
-            android:label="@string/title_activity_share" >
-        </activity>
-        <activity
-            android:name="com.yellowmoss.spamtextmessager.StartSpamScreen2"
-            android:label="@string/title_activity_start_spam_screen2" >
         </activity>
     </application>
 
