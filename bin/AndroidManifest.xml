@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yellowmoss.spamtextmessager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconv2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yellowmoss.spamtextmessager.StartupScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yellowmoss.spamtextmessager.StartSpamScreen"
+            android:label="@string/title_activity_start_spam_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yellowmoss.spamtextmessager.SpamActivity"
+            android:label="@string/title_activity_spam"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yellowmoss.spamtextmessager.Help"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yellowmoss.spamtextmessager.SendBugReport"
+            android:label="@string/title_activity_send_bug_report"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yellowmoss.spamtextmessager.DebugScreen"
+            android:label="@string/title_activity_debug_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

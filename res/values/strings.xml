@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Spam Text Messager</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_start_spam_screen">Start Spam Screen</string>
+    <string name="title_activity_spam">Spam is Sending</string>
+    <string name="title_activity_help">Help</string>
+    <string name="version">Current Version: 1.0</string>
+    <string name="title_activity_send_bug_report">Send a Bug Report</string>
+    <string name="title_activity_debug_screen">DebugScreen</string>
+
+</resources>
