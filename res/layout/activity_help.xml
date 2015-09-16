@@ -34,7 +34,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="37dp"
-        android:text="It doesn't work on my phone!"
+        android:text="F.A.Q's"
         android:onClick="startDontWork" />
 
     <Button

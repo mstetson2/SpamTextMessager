@@ -16,8 +16,8 @@ public class Help extends Activity {
 	public void startDontWork(View v) {
 		// startActivity(new Intent(getApplicationContext(), DontWork.class));
 	}
-	public void startDeveloperInfo(View v)
-	{
+
+	public void startDeveloperInfo(View v) {
 		setContentView(R.layout.developer_info);
 	}
 }

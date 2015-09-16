@@ -56,7 +56,6 @@
         android:layout_below="@+id/textView2"
         android:inputType="textMultiLine" >
 
-        <requestFocus />
     </EditText>
 
     <TextView

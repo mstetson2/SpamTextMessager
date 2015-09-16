@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yellowmoss.spamtextmessager"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.1" >
 
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
@@ -16,8 +16,9 @@
         android:icon="@drawable/iconv2"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
-            android:name="com.yellowmoss.spamtextmessager.StartupScreen"
+            android:name="com.yellowmoss.spamtextmessager.StartSpamScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -26,11 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.yellowmoss.spamtextmessager.StartSpamScreen"
-            android:label="@string/title_activity_start_spam_screen"
-            android:screenOrientation="portrait" >
-        </activity>
+        
         <activity
             android:name="com.yellowmoss.spamtextmessager.SpamActivity"
             android:label="@string/title_activity_spam"

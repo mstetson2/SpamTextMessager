@@ -10,5 +10,7 @@
     <string name="version">Current Version: 1.0</string>
     <string name="title_activity_send_bug_report">Send a Bug Report</string>
     <string name="title_activity_debug_screen">DebugScreen</string>
+    <string name="faq_list">F.A.Q\'s:\n\n</string>
+    <string name="link"><name>Spam Text Messager on Google Play!\n\n</name><url>https://play.google.com/store</url></string>
 
 </resources>

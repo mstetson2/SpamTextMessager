@@ -35,14 +35,12 @@ public class SpamActivity extends Activity {
 				++messageCount;
 
 			}
-		} 
-		else
-		{
-			Toast.makeText(
-					getBaseContext(),
+		} else {
+			Toast.makeText(getBaseContext(),
 					"You can only send 25 messages at once.",
 					Toast.LENGTH_SHORT).show();
-			startActivity(new Intent(getApplicationContext(), StartSpamScreen.class));
+			startActivity(new Intent(getApplicationContext(),
+					StartSpamScreen.class));
 		}
 	}
 
