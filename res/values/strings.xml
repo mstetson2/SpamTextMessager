@@ -7,10 +7,11 @@
     <string name="title_activity_start_spam_screen">Start Spam Screen</string>
     <string name="title_activity_spam">Spam is Sending</string>
     <string name="title_activity_help">Help</string>
-    <string name="version">Current Version: 1.0</string>
+    <string name="version">Current Version: 0.5</string>
     <string name="title_activity_send_bug_report">Send a Bug Report</string>
     <string name="title_activity_debug_screen">DebugScreen</string>
     <string name="faq_list">F.A.Q\'s:\n\n</string>
-    <string name="link"><name>Spam Text Messager on Google Play!\n\n</name><url>https://play.google.com/store</url></string>
+    <string name="title_activity_share">Share</string>
+    <string name="title_activity_start_spam_screen2">StartSpamScreen2</string>
 
 </resources>

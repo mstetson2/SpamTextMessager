@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.content.Intent;
-import android.os.Build;
 
 public class SendBugReport extends Activity {
 
